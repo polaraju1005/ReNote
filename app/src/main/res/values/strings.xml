@@ -7,5 +7,8 @@
     <string name="apple_login">Sign in with Apple</string>
     <string name="sign_up_btn_txt">Sign-Up</string>
     <string name="sign_up_with_email_btn">Sign-Up with Email</string>
-    <string name="aldready_have_an_account">Aldready have an account?  Sign in</string>
+    <string name="already_have_an_account">Already have an account?  Sign in</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
 </resources>

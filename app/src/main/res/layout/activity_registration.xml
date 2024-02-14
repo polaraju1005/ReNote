@@ -195,10 +195,11 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:id="@+id/txtAlreadySignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/red_hat_display"
-        android:text="@string/aldready_have_an_account"
+        android:text="@string/already_have_an_account"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginTop="40dp"

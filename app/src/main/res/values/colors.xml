@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="green">#12AF3A</color>
     <color name="google_btn_background">#3C50FF</color>
+    <color name="sign_up_btn_start_clr">#039729</color>
+    <color name="sign_up_btn_end_clr">#4EEA76</color>
+    <color name="edittext_box_color">#4B68FF</color>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
-        android:startColor="#039729"
-        android:endColor="#4EEA76"/>
+        android:startColor="@color/sign_up_btn_start_clr"
+        android:endColor="@color/sign_up_btn_end_clr"/>
 </shape>
