@@ -41,5 +41,9 @@ class RegistrationActivity : AppCompatActivity() {
         btnSignUp.setOnClickListener {
             startActivity(Intent(this@RegistrationActivity,SignUpActivity::class.java))
         }
+
+        txtAlreadySignIn.setOnClickListener {
+            startActivity(Intent(this@RegistrationActivity,SignInActivity::class.java))
+        }
     }
 }
