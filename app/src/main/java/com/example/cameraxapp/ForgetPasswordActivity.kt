@@ -10,12 +10,17 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class ForgetPasswordActivity : AppCompatActivity() {
+
     private lateinit var btnBack: ImageView
     private lateinit var txtCompanyName: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forget_password)
+
         txtCompanyName = findViewById(R.id.textView)
+        btnBack = findViewById(R.id.btnBack)
+
         val spannable = SpannableStringBuilder(getString(R.string.company_name))
         spannable.setSpan(
             ForegroundColorSpan(getColor(R.color.green)),
@@ -24,6 +29,7 @@ class ForgetPasswordActivity : AppCompatActivity() {
             Spannable.SPAN_INCLUSIVE_INCLUSIVE
         )
         txtCompanyName.text = spannable
+
         btnBack.setOnClickListener {
             startActivity(Intent(this@ForgetPasswordActivity,SignInActivity::class.java))
             finishAffinity()
