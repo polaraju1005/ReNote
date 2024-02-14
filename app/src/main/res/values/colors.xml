@@ -6,5 +6,5 @@
     <color name="google_btn_background">#3C50FF</color>
     <color name="sign_up_btn_start_clr">#039729</color>
     <color name="sign_up_btn_end_clr">#4EEA76</color>
-    <color name="edittext_box_color">#4B68FF</color>
+    <color name="text_color">#212121</color>
 </resources>
