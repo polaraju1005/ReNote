@@ -10,12 +10,16 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class OTPActivity : AppCompatActivity() {
+
     private lateinit var txtCompanyName: TextView
     private lateinit var btnBack: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_otpactivity)
+
         txtCompanyName = findViewById(R.id.textView)
+        btnBack = findViewById(R.id.btnBack)
+
         val spannable = SpannableStringBuilder(getString(R.string.company_name))
         spannable.setSpan(
             ForegroundColorSpan(getColor(R.color.green)),
@@ -24,6 +28,7 @@ class OTPActivity : AppCompatActivity() {
             Spannable.SPAN_INCLUSIVE_INCLUSIVE
         )
         txtCompanyName.text = spannable
+
         btnBack.setOnClickListener {
             startActivity(Intent(this@OTPActivity,SignUpActivity::class.java))
             finishAffinity()

@@ -52,7 +52,6 @@
                 android:fontFamily="@font/red_hat_display"
                 android:hint="@string/email_hint"
                 app:endIconMode="clear_text"
-                app:hintTextColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -127,7 +126,7 @@
     </androidx.core.widget.NestedScrollView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/btnStuAttendance"
+        android:id="@+id/btnSignUp"
         android:layout_width="340dp"
         android:layout_height="50dp"
         android:layout_marginBottom="50dp"
