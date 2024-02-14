@@ -9,6 +9,7 @@ import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 
 class SplashActivity : AppCompatActivity() {
     private lateinit var viewSplash: View
@@ -31,6 +32,7 @@ class SplashActivity : AppCompatActivity() {
     }
     private fun display(){
         startActivity(Intent(this@SplashActivity,RegistrationActivity::class.java))
+        Toast.makeText(this@SplashActivity,"Hello",Toast.LENGTH_SHORT).show()
         finish()
     }
 }
