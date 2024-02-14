@@ -32,7 +32,6 @@ class SplashActivity : AppCompatActivity() {
     }
     private fun display(){
         startActivity(Intent(this@SplashActivity,RegistrationActivity::class.java))
-        Toast.makeText(this@SplashActivity,"Hello",Toast.LENGTH_SHORT).show()
         finish()
     }
 }

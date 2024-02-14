@@ -1,7 +1,6 @@
 package com.example.cameraxapp
 
 import android.content.Intent
-import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Spannable
@@ -10,12 +9,14 @@ import android.text.style.ForegroundColorSpan
 import android.widget.ImageView
 import android.widget.TextView
 
-class SignUpActivity : AppCompatActivity() {
+class SignInActivity : AppCompatActivity() {
+
     private lateinit var txtCompanyName: TextView
-    private lateinit var btnBack:ImageView
+    private lateinit var btnBack: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up)
+        setContentView(R.layout.activity_sign_in)
 
         txtCompanyName = findViewById(R.id.textView)
         btnBack = findViewById(R.id.btnBack)
@@ -30,7 +31,7 @@ class SignUpActivity : AppCompatActivity() {
         txtCompanyName.text = spannable
 
         btnBack.setOnClickListener {
-            startActivity(Intent(this@SignUpActivity,RegistrationActivity::class.java))
+            startActivity(Intent(this@SignInActivity,RegistrationActivity::class.java))
             finishAffinity()
         }
     }
