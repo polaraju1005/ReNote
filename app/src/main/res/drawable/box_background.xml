@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/box_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid background color for the box (replace with your desired color) -->
+    <solid android:color="@color/white" />
+    <!-- Green border color and size (replace with your desired color and size) -->
+    <stroke android:color="@color/green" android:width="2dp" />
+    <!-- Adjust the corner radius as needed -->
+    <corners android:radius="10dp" />
+</shape>
