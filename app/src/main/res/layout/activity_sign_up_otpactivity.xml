@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".OTPActivity">
-
+    tools:context=".SignUpOTPActivity">
 
     <LinearLayout
         android:id="@+id/time_resend"
@@ -23,9 +22,9 @@
             android:id="@+id/timerTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
             android:fontFamily="@font/red_hat_display"
-            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
             android:text="00:00"
             android:textColor="@color/black"
             android:textSize="15sp" />
@@ -154,6 +153,4 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-

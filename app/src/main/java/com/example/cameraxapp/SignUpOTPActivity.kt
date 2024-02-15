@@ -9,16 +9,16 @@ import android.text.style.ForegroundColorSpan
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
-import com.google.android.material.textfield.TextInputEditText
 
-class OTPActivity : AppCompatActivity() {
+class SignUpOTPActivity : AppCompatActivity() {
 
     private lateinit var txtCompanyName: TextView
     private lateinit var btnBack: ImageView
-    private lateinit var btnVerify: CardView
+    private lateinit var btnVerify:CardView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_otpactivity)
+        setContentView(R.layout.activity_sign_up_otpactivity)
 
         txtCompanyName = findViewById(R.id.textView)
         btnBack = findViewById(R.id.btnBack)
@@ -31,16 +31,15 @@ class OTPActivity : AppCompatActivity() {
             2,
             Spannable.SPAN_INCLUSIVE_INCLUSIVE
         )
-
         txtCompanyName.text = spannable
 
         btnBack.setOnClickListener {
-            startActivity(Intent(this@OTPActivity,SignInActivity::class.java))
+            startActivity(Intent(this@SignUpOTPActivity,SignUpActivity::class.java))
             finishAffinity()
         }
 
         btnVerify.setOnClickListener {
-            startActivity(Intent(this@OTPActivity,MainActivity::class.java))
+            startActivity(Intent(this@SignUpOTPActivity,MainActivity::class.java))
         }
     }
 }
