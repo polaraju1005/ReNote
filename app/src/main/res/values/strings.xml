@@ -10,5 +10,20 @@
     <string name="already_have_an_account">Already have an account?  Sign in</string>
     <string name="email_hint">Email</string>
     <string name="password_hint">Password</string>
+    <string name="verify">Verify</string>
+    <string name="otp">Enter the OTP</string>
+    <string name="sign_in_page_heading">Sign In with your Credentials</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="text_login">Login</string>
+    <string name="otp_content">We have sent theOTP verification code to your email address. Enter the code below</string>
     <string name="confirm_password_hint">Confirm Password</string>
+    <string name="forget_password">Forget password 🔑</string>
+    <string name="forget_password_text">Enter your email address. We will send an OTP code for verification in the next step.</string>
+
+
+
+
+    <string name="text_logout">Logout</string>
+    <string name="resendotp">Resend OTP</string>
 </resources>
