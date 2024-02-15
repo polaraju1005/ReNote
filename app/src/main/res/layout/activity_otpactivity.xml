@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,27 +8,68 @@
     android:background="@color/white"
     tools:context=".OTPActivity">
 
+
+    <LinearLayout
+        android:id="@+id/time_resend"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="152dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test4otp"
+        tools:layout_editor_absoluteX="41dp">
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/red_hat_display"
+            android:paddingLeft="20dp"
+            android:text="00:00"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/resendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:background="?android:selectableItemBackground"
+            android:fontFamily="@font/red_hat_display"
+            android:text="@string/resendotp"
+            android:textColor="@color/green"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/exo_2_bold"
+        android:gravity="center"
+        android:padding="8dp"
         android:text="@string/company_name"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <ImageView
-        android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="32dp"
-        android:src="@drawable/back"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <TextView
         android:id="@+id/OTP"
@@ -46,6 +88,7 @@
 
     <TextView
 
+        android:id="@+id/test4otp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/otp_content"
@@ -57,11 +100,37 @@
         android:textSize="15sp"
         android:fontFamily="@font/red_hat_display"/>
 
+    <com.chaos.view.PinView
+        android:id="@+id/pinerview"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:cursorVisible="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:itemBackground="@drawable/box_background"
+        app:hideLineWhenFilled="false"
+        app:itemCount="4"
+        app:itemHeight="80dp"
+        app:itemRadius="10dp"
+        app:itemWidth="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test4otp" />
+
+
+
+
+
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/btnStuAttendance"
         android:layout_width="340dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="300dp"
         android:elevation="5dp"
         android:foreground="?attr/selectableItemBackground"
         android:padding="13dp"
@@ -88,8 +157,11 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
+
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
