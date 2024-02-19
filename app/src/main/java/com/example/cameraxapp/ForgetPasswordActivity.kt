@@ -54,7 +54,6 @@ class ForgetPasswordActivity : AppCompatActivity() {
         })
 
 
-
         etEmail.setOnTouchListener { v, event ->
             if (event.action == MotionEvent.ACTION_UP){
                 val drawableRight = 2
